@@ -13,12 +13,13 @@ public class FileSystemConfig {
 
     private FileSystemConfig() throws IOException {
         properties = new Properties();
-        properties.load(getClass().getResourceAsStream("props/fileconfig.properties"));
+        properties.load(getClass().getResourceAsStream("resources/fileconfig.properties"));
     }
 
     public static FileSystemConfig getInstance() throws IOException{
         if (instance == null) {
             instance = new FileSystemConfig();
+            System.out.println("Created new FileSystemConfig instance.");
         }
         return instance;
     }

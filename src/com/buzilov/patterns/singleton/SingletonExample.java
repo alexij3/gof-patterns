@@ -12,6 +12,7 @@ public class SingletonExample {
             System.out.println(fileSystemConfig.getImagesPath());
             System.out.println(fileSystemConfig.getVideosPath());
             System.out.println(fileSystemConfig.getTextFilesPath());
+            System.out.println("The same instance: " + (fileSystemConfig == FileSystemConfig.getInstance()));
         } catch (IOException e) {
             e.printStackTrace();
         }
