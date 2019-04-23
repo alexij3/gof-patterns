@@ -1,10 +1,10 @@
-package com.buzilov.patterns.builder;
+package com.buzilov.patterns.creational.builder;
 
-import com.buzilov.patterns.builder.hierarchy.CheapCourseBuilder;
-import com.buzilov.patterns.builder.hierarchy.ContentManager;
-import com.buzilov.patterns.builder.hierarchy.CourseBuilder;
-import com.buzilov.patterns.builder.hierarchy.ExpensiveCourseBuilder;
-import com.buzilov.patterns.builder.innerclass.Course;
+import com.buzilov.patterns.creational.builder.hierarchy.CheapCourseBuilder;
+import com.buzilov.patterns.creational.builder.hierarchy.ContentManager;
+import com.buzilov.patterns.creational.builder.hierarchy.CourseBuilder;
+import com.buzilov.patterns.creational.builder.hierarchy.ExpensiveCourseBuilder;
+import com.buzilov.patterns.creational.builder.innerclass.Course;
 
 import java.util.Arrays;
 import java.util.Date;
@@ -36,8 +36,8 @@ public class BuilderExample {
         expensiveCourseContentManager.createCourse();
         cheapCourseContentManager.createCourse();
 
-        com.buzilov.patterns.builder.hierarchy.Course expensiveCourse = expensiveCourseContentManager.getCourse();
-        com.buzilov.patterns.builder.hierarchy.Course cheapCourse = cheapCourseContentManager.getCourse();
+        com.buzilov.patterns.creational.builder.hierarchy.Course expensiveCourse = expensiveCourseContentManager.getCourse();
+        com.buzilov.patterns.creational.builder.hierarchy.Course cheapCourse = cheapCourseContentManager.getCourse();
 
         System.out.println("[Expensive course information]");
         System.out.println(expensiveCourse.toString() + "\n");

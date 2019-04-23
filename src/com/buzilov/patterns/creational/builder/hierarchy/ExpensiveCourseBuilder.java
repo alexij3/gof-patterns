@@ -1,34 +1,34 @@
-package com.buzilov.patterns.builder.hierarchy;
+package com.buzilov.patterns.creational.builder.hierarchy;
 
 import java.util.Arrays;
 import java.util.Date;
 import java.util.Random;
 
-public class CheapCourseBuilder implements CourseBuilder {
+public class ExpensiveCourseBuilder implements CourseBuilder {
     private Course course;
 
-    public CheapCourseBuilder() {
+    public ExpensiveCourseBuilder() {
         course = new Course();
     }
 
     @Override
     public void buildId() {
-        course.setId(new Random().nextInt(40) + 15);
+        course.setId(new Random().nextInt(40) + 2);
     }
 
     @Override
     public void buildName() {
-        course.setName("Cheap course name");
+        course.setName("Expensive course name");
     }
 
     @Override
     public void buildDescription() {
-        course.setDescription("Cheap course description");
+        course.setDescription("Expensive course description");
     }
 
     @Override
     public void buildTags() {
-        course.setTags(Arrays.asList("Cheap", "Very cheap"));
+        course.setTags(Arrays.asList("Expensive", "Very expensive"));
     }
 
     @Override
@@ -48,7 +48,7 @@ public class CheapCourseBuilder implements CourseBuilder {
 
     @Override
     public void buildPrice() {
-        course.setPrice(1d);
+        course.setPrice(10000d);
     }
 
     public Course getCourse(){

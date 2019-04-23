@@ -1,4 +1,4 @@
-package com.buzilov.patterns.singleton;
+package com.buzilov.patterns.creational.singleton;
 
 import java.io.IOException;
 import java.util.Properties;

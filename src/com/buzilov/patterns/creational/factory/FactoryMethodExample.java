@@ -1,7 +1,7 @@
-package com.buzilov.patterns.factorypattern;
+package com.buzilov.patterns.creational.factory;
 
-import com.buzilov.patterns.factorypattern.factories.UserFactory;
-import com.buzilov.patterns.factorypattern.model.User;
+import com.buzilov.patterns.creational.factory.factories.UserFactory;
+import com.buzilov.patterns.creational.factory.model.User;
 
 public class FactoryMethodExample {
     public static void main(String[] args) {

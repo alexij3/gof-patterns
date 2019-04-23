@@ -1,5 +1,6 @@
-package com.buzilov.patterns.builder.innerclass;
+package com.buzilov.patterns.structural.composite;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -12,6 +13,7 @@ public class Course {
     private final Date endDate;
     private final Integer ageLimit; // Optional field
     private final Double price; // Optional field
+    private final List<Course> parts = new ArrayList<>();
 
     public static class CourseBuilder{
         private Integer id;
@@ -22,6 +24,7 @@ public class Course {
         private Date endDate;
         private Integer ageLimit;
         private Double price;
+        private List<Course> parts;
 
         public CourseBuilder(Integer id, String name, String description, Date startDate, Date endDate) {
             this.id = id;
@@ -119,17 +122,22 @@ public class Course {
         return price;
     }
 
+    public List<Course> getParts() {
+        return parts;
+    }
+
     @Override
     public String toString() {
         return "Course{" +
                 "id=" + id +
-                ", name='" + name + '\'' +
-                ", description='" + description + '\'' +
-                ", tags=" + tags +
-                ", startDate=" + startDate +
-                ", endDate=" + endDate +
-                ", ageLimit=" + ageLimit +
-                ", price=" + price +
+                ",\n name='" + name + '\'' +
+                ",\n description='" + description + '\'' +
+                ",\n tags=" + tags +
+                ",\n startDate=" + startDate +
+                ",\n endDate=" + endDate +
+                ",\n ageLimit=" + ageLimit +
+                ",\n price=" + price +
+                ",\n parts=" + parts +
                 '}';
     }
 }

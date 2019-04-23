@@ -1,4 +1,4 @@
-package com.buzilov.patterns.factorypattern.model;
+package com.buzilov.patterns.creational.factory.model;
 
 public class SimpleUser extends User {
 

@@ -1,9 +1,9 @@
-package com.buzilov.patterns.factorypattern.factories;
+package com.buzilov.patterns.creational.factory.factories;
 
-import com.buzilov.patterns.factorypattern.model.Admin;
-import com.buzilov.patterns.factorypattern.model.ContentManager;
-import com.buzilov.patterns.factorypattern.model.SimpleUser;
-import com.buzilov.patterns.factorypattern.model.User;
+import com.buzilov.patterns.creational.factory.model.Admin;
+import com.buzilov.patterns.creational.factory.model.ContentManager;
+import com.buzilov.patterns.creational.factory.model.SimpleUser;
+import com.buzilov.patterns.creational.factory.model.User;
 
 public class UserFactory {
     public User getUser(User.UserType userType, String username, String password) {

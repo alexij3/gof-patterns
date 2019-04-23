@@ -1,4 +1,4 @@
-package com.buzilov.patterns.builder.hierarchy;
+package com.buzilov.patterns.creational.builder.hierarchy;
 
 import java.util.Date;
 import java.util.List;
