@@ -137,7 +137,6 @@ public class Course {
                 ",\n endDate=" + endDate +
                 ",\n ageLimit=" + ageLimit +
                 ",\n price=" + price +
-                ",\n parts=" + parts +
                 '}';
     }
 }
