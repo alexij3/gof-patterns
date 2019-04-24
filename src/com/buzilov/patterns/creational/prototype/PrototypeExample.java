@@ -1,6 +1,5 @@
 package com.buzilov.patterns.creational.prototype;
 
-import java.util.ArrayList;
 import java.util.Date;
 
 public class PrototypeExample {
