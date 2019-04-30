@@ -13,7 +13,7 @@ public class FileSystemConfig {
 
     private FileSystemConfig() throws IOException {
         properties = new Properties();
-        properties.load(getClass().getResourceAsStream("resources/fileconfig.properties"));
+        properties.load(getClass().getClassLoader().getResourceAsStream("fileconfig.properties"));
     }
 
     public static FileSystemConfig getInstance() throws IOException{
